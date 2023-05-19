@@ -8,7 +8,7 @@ function App() {
   const [disabled, setDisabled] = useState(false)
   return (
     <div className="App">
-      <button style={{backgroundColor:color}}
+      <button style={{backgroundColor: disabled? 'gray':color}}
         onClick={()=>{setColor(btnColor)}}
         disabled={disabled}>
         Change color to {btnColor}
