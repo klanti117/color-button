@@ -3,7 +3,8 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <h1>Color button</h1>
+      <button style={{backgroundColor:'blue'}}>
+        Change color to red</button>
     </div>
   );
 }
