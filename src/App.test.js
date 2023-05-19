@@ -19,12 +19,12 @@ test('checkbox functionality', () => {
   const colorBtn = screen.getByRole('button', {name:/change color to red/i})
   const checkBox = screen.getByRole('checkbox')
 //when the checkbox is checked btn disables
-  expect(checkBox).not.toBeEnabled()
+  expect(checkBox).not.toBeChecked()
   expect(colorBtn).toBeEnabled()
 
 //when the checkbox is checked btn disables
   fireEvent.click(checkBox)
 
-  expect(checkBox).toBeEnabled()
+  expect(checkBox).toBeChecked()
   expect(colorBtn).not.toBeEnabled()
 })
