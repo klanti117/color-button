@@ -16,6 +16,7 @@ function App() {
       <br/>
       <input 
         type="checkbox"
+        //new comment
         defaultChecked={disabled}  
         onClick={(e)=>setDisabled(e.target.checked)}
       />
